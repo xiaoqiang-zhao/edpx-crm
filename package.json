@@ -1,0 +1,17 @@
+{
+    "name": "edpx-vm",
+    "version": "0.0.1",
+    "description": "EDP extension for Velocity",
+    "contributors": [
+        {"name": "treelite", "email": "c.xinle@gmail.com"}
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/rigel/edpx-vm"
+    }, 
+    "scripts": { 
+        "install" : "edp extension add ./lib",
+        "preuninstall" : "edp extension remove ./lib"
+    },
+    "readmeFilename": "README.md"
+}

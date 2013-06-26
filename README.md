@@ -1,1 +1,1 @@
-#EDP extension for Velocity
+#EDP extension for CRM

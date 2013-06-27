@@ -18,6 +18,7 @@
   },
   "readmeFilename": "README.md",
   "dependencies": {
-    "edp": "~0.6.3"
+    "edp": "~0.6.3",
+    "wget": "0.0.1"
   }
 }

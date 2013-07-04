@@ -21,6 +21,9 @@
     "edp-project": "~0.4.2",
     "edp-package": "~0.4.0",
     "edp-codegen": "~0.4.0",
-    "edp-config": "~0.4.2"
+    "edp-config": "~0.4.2",
+    "edp-webserver": "~0.4.0",
+    "mkdirp": "~0.3.5",
+    "velocityjs": "~0.3.13"
   }
 }

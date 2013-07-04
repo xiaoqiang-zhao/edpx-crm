@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>{{{project.name}}}</title>
-    #includeStatic
+    #includeStatic()
     {{#loaderConfig}}
     <script>
     require.config({
@@ -24,7 +24,7 @@
     {{/loaderConfig}}
 </head>
 <body>
-    #footer
+    #footer()
 </body>
 <script>
 </script>

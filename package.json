@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/rigel/edpx-crm"
+    "url": "git://github.com/rigelfe/edpx-crm"
   },
   "scripts": {
     "install": "edp extension add ./lib",

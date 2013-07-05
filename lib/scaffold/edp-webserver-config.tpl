@@ -37,6 +37,12 @@ exports.getLocations = function () {
             ]
         },
         {
+            location: /validatorGenFilter\?url=/,
+            handler: [
+                crmValidator()
+            ]
+        },
+        {
             location: /\.action$/,
             handler: [
                 crmMock() 

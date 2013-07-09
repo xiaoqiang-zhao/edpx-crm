@@ -43,7 +43,7 @@ exports.getLocations = function () {
             ]
         },
         {
-            location: /\.action$/,
+            location: /\.action/,
             handler: [
                 crmMock() 
             ]

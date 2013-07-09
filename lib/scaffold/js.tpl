@@ -3,6 +3,6 @@
  * @author {{{author}}}({{{email}}})
  */
 
- define(function (require) {
+define(function (require) {
 
- });
+});

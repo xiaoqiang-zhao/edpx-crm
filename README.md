@@ -47,4 +47,4 @@
 
     $ edp crm doc --src=../source --out=docs
 
-编写代码注释请参阅[注释说明](doc/README.md)
+编写代码注释请参阅[注释说明](doc/comment.md)

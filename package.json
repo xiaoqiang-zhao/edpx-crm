@@ -28,6 +28,8 @@
     "edp-config": "~0.4.2",
     "edp-webserver": "~0.4.0",
     "mkdirp": "~0.3.5",
-    "velocityjs": "~0.3.13"
+    "velocityjs": "~0.3.13",
+    "uglify-js": "~2.3.6",
+    "edp-build": "~0.4.4"
   }
 }

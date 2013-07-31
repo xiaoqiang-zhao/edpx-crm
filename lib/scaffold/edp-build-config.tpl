@@ -60,6 +60,10 @@ exports.exclude = [
     '*.swp'
 ];
 
+exports.retention = [
+    '/WEB-INF'
+];
+
 exports.injectProcessor = function ( processors ) {
     for ( var key in processors ) {
         global[ key ] = processors[ key ];

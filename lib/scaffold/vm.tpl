@@ -8,7 +8,7 @@
     {{#loaderConfig}}
     <script>
     require.config({
-        baseUrl: '{{{loaderBaseUrl}}}',
+        baseUrl: '$!{webRoot}/{{{loaderBaseUrl}}}',
         paths: { {{#forEach loaderPaths}}
             {{{key}}}: '{{{value}}}'{{^last}},{{/last}}
         {{/forEach}} },

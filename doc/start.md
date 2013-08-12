@@ -2,7 +2,7 @@
 
 ## 使用
 
-    edp crm start
+    $ edp crm start
 
 ## 介绍
 

@@ -35,6 +35,13 @@
 
 浏览`localhost:8848/index.action`
 
+## 命令
+
+* [init](doc/init.md)
+* [add](doc/add.md)
+* [start](doc/start.md)
+* [mock](doc/mock.md)
+
 ## 生成 jsDoc
 
     $ edp crm doc

@@ -2,7 +2,7 @@
 
 ## 使用
 
-    edp crm add index.vm
+    $ edp crm add index.vm
 
 ## 介绍
 

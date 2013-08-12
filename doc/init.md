@@ -2,7 +2,7 @@
 
 ## 使用
 
-    edp crm init
+    $ edp crm init
     Project Code: test
     Project Name: 演示项目
     Project Code (for mock): test

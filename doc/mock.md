@@ -2,7 +2,7 @@
 
 ## 使用
 
-    edp crm mock <模拟请求地址>
+    $ edp crm mock <模拟请求地址>
 
 **注：**模拟请求地址应与线上实际请求地址一致，都是以`.action`结尾
 
@@ -21,7 +21,7 @@
 
 ### VM模拟数据
 
-    edp crm mock custom/index.action
+    $ edp crm mock custom/index.action
     mock file type (1 - vm, 2 - json, 3 - remote, 4 - validator): 1
     vm file: 
 
@@ -51,7 +51,7 @@ vm模拟数据配置文件如下：
 
 ### JSON模拟数据
 
-    edp crm mock custom/add.action
+    $ edp crm mock custom/add.action
     mock file type (1 - vm, 2 - json, 3 - remote, 4 - validator): 2
 
 json模拟数据配置文件如下：
@@ -73,7 +73,7 @@ json模拟数据配置文件如下：
 
 ### 反向代理
 
-    edp crm mock custom/save.action
+    $ edp crm mock custom/save.action
     mock file type (1 - vm, 2 - json, 3 - remote, 4 - validator): 3
     path:
 
@@ -99,7 +99,7 @@ json模拟数据配置文件如下：
 
 ### 验证模拟数据
 
-    edp crm mock custom/save.action
+    $ edp crm mock custom/save.action
     mock file type (1 - vm, 2 - json, 3 - remote, 4 - validator): 4
 
 模拟请求的地址为需要验证的请求的地址，该生成方式只适用于按照乐高平台进行配置的验证，以此为例生成的对应实际请求为`/validatorGenFilter?url=custom/save.action`，对应的配置文件为：`test/custom/saveValidator.js`。

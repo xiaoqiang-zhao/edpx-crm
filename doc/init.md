@@ -9,7 +9,7 @@
 
 * `Project Code` 项目代号，会以此生成一个全局的配置变量，包含项目的基本信息:`var test = {root: '/'};`
 * `Prject Name` 项目名称，会作为`vm`、`html`文件的默认`title`内容
-* `Project Code (for mock)` 模拟数据项目代号，乐高平台使用，默认与项目代号相同，详细[mock](doc/mock.md)命名中关于模拟数据的描述
+* `Project Code (for mock)` 模拟数据项目代号，乐高平台使用，默认与项目代号相同，详细[mock](mock.md)命名中关于模拟数据的描述
 
 ## 介绍
 
@@ -20,7 +20,7 @@
 * `src` 源文件夹，存放`js`、`css`与`less`等源文件
 * `entry` 入口文件夹，用于存放所有的`vm`文件，其中按照业务逻辑划分子文件夹
 * `tcom` 公共宏文件夹，其中已初始化`utils.macro.vm`文件，用于项目通用的宏定义
-* `test` 测试用文件夹，其中存放mock数据，mock数据的构建与用法请参阅[mock](doc/mock.md) 命令
+* `test` 测试用文件夹，其中存放mock数据，mock数据的构建与用法请参阅[mock](mock.md) 命令
 * `dep` 开发依赖第三方文件夹，用于存放`esl`, `tangram`, `ecui`等公共组件，不需要手工维护
 * `doc` 文档文件夹
 * `tool` 开发工具文件夹

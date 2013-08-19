@@ -25,7 +25,6 @@
 </head>
 <body>
     #footer()
-</body>
 <script>
 </script>
 </body>

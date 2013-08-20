@@ -55,3 +55,9 @@
     $ edp crm doc --src=../source --out=docs
 
 编写代码注释请参阅[注释说明](doc/comment.md)
+
+## 测试
+
+    $ npm test
+
+使用[jasmine](http://pivotal.github.io/jasmine/)，借助[jasmine-node](https://github.com/mhevery/jasmine-node)构建的单元测试用例

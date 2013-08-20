@@ -61,7 +61,8 @@ exports.exclude = [
 ];
 
 exports.retention = [
-    '/WEB-INF'
+    '/WEB-INF',
+    '/dep/*/*/dist'
 ];
 
 exports.injectProcessor = function ( processors ) {

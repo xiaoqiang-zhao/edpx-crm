@@ -32,8 +32,6 @@
     "mkdirp": "~0.3.5",
     "velocityjs": "~0.3.13",
     "uglify-js": "~2.3.6",
-    "esprima": "~1.0.2",
-    "estraverse": "~1.1.1",
     "MD5": "~1.1.0"
   }
 }

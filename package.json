@@ -17,6 +17,8 @@
     "url": "git://github.com/rigelfe/edpx-crm"
   },
   "scripts": {
+    "install": "edp extension add ./lib",
+    "preuninstall": "edp extension remove ./lib",
     "test": "jasmine-node --verbose test"
   },
   "readmeFilename": "README.md",

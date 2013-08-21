@@ -8,6 +8,7 @@ var pageEntries = 'html,htm,phtml,tpl,vm';
 
 exports.srcDir = 'src';
 exports.distDir = 'asset';
+exports.entryDir = 'entry';
 
 exports.getProcessors = function () {
     return [ 

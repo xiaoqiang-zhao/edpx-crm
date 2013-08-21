@@ -6,6 +6,9 @@ exports.output = path.resolve( __dirname, 'output' );
 var moduleEntries = 'html,htm,phtml,tpl,vm,js';
 var pageEntries = 'html,htm,phtml,tpl,vm';
 
+exports.srcDir = 'src';
+exports.distDir = 'asset';
+
 exports.getProcessors = function () {
     return [ 
         new LessCompiler( {
@@ -26,8 +29,8 @@ exports.getProcessors = function () {
                 { type: 'html', tag: 'script', attribute: 'src', extnames: pageEntries },
                 { extnames: moduleEntries, replacer: 'module-config' }
             ],
-            from: 'src',
-            to: 'asset'
+            from: exports.srcDir,
+            to: exports.distDir
         } ) 
     ];
 };

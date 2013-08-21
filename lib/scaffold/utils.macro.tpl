@@ -15,6 +15,10 @@
 <script src="$!{webRoot}/{{{this}}}"></script>
 {{/each}}
 <script>
+require.config({
+    urlArgs: {}
+});
+
 var {{{project.code}}} = {
     root: '$!{webRoot}'
 };

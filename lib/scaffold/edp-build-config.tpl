@@ -15,7 +15,6 @@ exports.getProcessors = function () {
         new LessCompiler( {
             entryExtnames: pageEntries
         } ), 
-        new CssImporter(),
         new ModuleCompiler( {
             configFile: 'module.conf',
             entryExtnames: moduleEntries

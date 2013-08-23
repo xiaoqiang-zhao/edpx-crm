@@ -11,12 +11,14 @@
     $ edp help crm
     CRM项目管理
     Sub Command:
-    add    添加文件
-    doc    创建jsDoc
-    import    添加第三方依赖
+    add     添加文件
+    build   构建目录或项目
+    doc     创建jsDoc
+    import  添加第三方依赖
     init    初始化当前目录为项目目录
     mock    设置模拟数据
-    start    启动调试服务器
+    refresh 刷新模块配置信息
+    start   启动调试服务器 
 
 ## 实例
 
@@ -42,6 +44,7 @@
 * [start](doc/start.md)
 * [mock](doc/mock.md)
 * [doc](doc/doc.md)
+* [build](doc/build.md)
 
 ## 测试
 

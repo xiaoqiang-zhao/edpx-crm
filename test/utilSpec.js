@@ -1,6 +1,7 @@
 var util = require('../lib/util');
 
 describe('util Specs', function () {
+
     describe('extend', function () {
         it('复制对象', function () {
             var base = {name: 'chen', sex: 'male'};
@@ -83,4 +84,56 @@ describe('util Specs', function () {
             expect(res).toEqual(data);
         });
     });
+
+    describe('loadModule', function () {
+        it('加载模块不缓存', function () {
+            var fs = require('fs');
+            var tmpFile = require('path').resolve(process.cwd(), 'tmp.js');
+            var content = 'exports.name="cxl";';
+
+            fs.writeFileSync(tmpFile, content, 'utf-8');
+            
+            var data = util.loadModule(tmpFile);
+            expect(data.name).toEqual('cxl');
+
+            content = 'exports.name="chen";';
+            fs.writeFileSync(tmpFile, content, 'utf-8');
+
+            data = util.loadModule(tmpFile);
+            expect(data.name).toEqual('chen');
+
+            fs.unlinkSync(tmpFile);
+        });
+    });
+
+    describe('rmdir', function () {
+        it('删除非空文件夹', function () {
+            var fs = require('fs');
+            var path = require('path');
+
+            var targetDir = path.resolve(process.cwd(), 'tmpDir');
+            fs.mkdirSync(targetDir);
+
+            fs.mkdirSync(
+                path.resolve(targetDir, 'tmpSeDir')
+            );
+
+            fs.writeFileSync(
+                path.resolve(targetDir, 'tmpFile.txt'),
+                'hello world',
+                'utf-8'
+            );
+
+            util.rmdir(targetDir);
+            var res = fs.existsSync(targetDir);
+            expect(res).toBeFalsy();
+
+            if (res) {
+                fs.rmdirSync(path.resolve(targetDir, 'tmpSeDir'));
+                fs.unlinkSync(path.resolve(targetDir, 'tmpFile.txt'));
+                fs.rmdirSync(targetDir);
+            }
+        });
+    });
+
 });

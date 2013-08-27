@@ -30,10 +30,6 @@
 
     $ edp crm create index
 
-    $ edp crm mock index.action
-    mock file type (1 - vm, 2 - json, 3 - remote): 1
-    vm path:
-
     $ edp crm start
 
 浏览`localhost:8848/index.action`

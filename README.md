@@ -13,6 +13,7 @@
     Sub Command:
     add     添加文件
     build   构建目录或项目
+    create  创建模块
     doc     创建jsDoc
     import  添加第三方依赖
     init    初始化当前目录为项目目录
@@ -27,7 +28,7 @@
     Project Name: 演示项目
     Project Code (for mock): test
 
-    $ edp crm add index.vm
+    $ edp crm create index
 
     $ edp crm mock index.action
     mock file type (1 - vm, 2 - json, 3 - remote): 1
@@ -40,11 +41,12 @@
 ## 命令
 
 * [init](doc/init.md)
+* [create](doc/create.md)
 * [add](doc/add.md)
-* [start](doc/start.md)
 * [mock](doc/mock.md)
-* [doc](doc/doc.md)
+* [start](doc/start.md)
 * [build](doc/build.md)
+* [doc](doc/doc.md)
 
 ## 测试
 

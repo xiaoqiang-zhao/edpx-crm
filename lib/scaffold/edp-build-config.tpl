@@ -3,12 +3,13 @@ exports.input = __dirname;
 var path = require( 'path' );
 exports.output = path.resolve( __dirname, 'output' );
 
-var moduleEntries = 'html,htm,phtml,tpl,vm,js';
-var pageEntries = 'html,htm,phtml,tpl,vm';
-
 exports.srcDir = 'src';
 exports.distDir = 'asset';
 exports.entryDir = 'entry';
+exports.moduleEntries = 'html,htm,phtml,tpl,vm,js';
+
+var moduleEntries = exports.moduleEntries;
+var pageEntries = 'html,htm,phtml,tpl,vm';
 
 exports.getProcessors = function () {
     return [ 

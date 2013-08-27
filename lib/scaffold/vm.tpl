@@ -26,6 +26,12 @@
 <body>
     #footer()
 <script>
+    {{#entryCode}}
+    require(['{{{moduleId}}}'], function (main) {
+        // 模块入口
+        main.enter();
+    });
+    {{/entryCode}}
 </script>
 </body>
 </html>

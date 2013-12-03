@@ -52,9 +52,10 @@
 
 ## 版本变更
 
-最新版本：__0.3.2__
+最新版本：__0.3.3__
 
-* 添加[create](doc/create.md)命令，创建业务模块一步到位
-* [combine](doc/build.md)配置项支持手动管理，urlArgs配置分散到各个入口页面
+* 添加本地模拟使用的`ejson`模块，支持`ejson.toJson()`，`ejson.toSimpleJson`
+* 所有`vm`模版变量统一封装到`$data`中
+* bug fix
 
 [了解更多](doc/changelog.md)

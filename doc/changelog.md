@@ -1,5 +1,11 @@
 # 版本变更
 
+## 0.3.3
+
+* 添加本地模拟使用的`ejson`模块，支持`ejson.toJson()`，`ejson.toSimpleJson`
+* 所有`vm`模版变量统一封装到`$data`中
+* bug fix
+
 ## 0.3.2
 
 * 添加[create](create.md)命令，创建业务模块一步到位
